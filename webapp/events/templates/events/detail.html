@@ -1,0 +1,44 @@
+{% extends "admin/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block title %}Events{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'events/style.css' %}" />
+
+<div class="div_content" align="center" >
+	
+	<!-- Header -->
+	<div class="div_list" align="left">
+		Bienvenido, {{ user.get_full_name }}!
+	</div>
+	
+	{% if event %}
+		<div class="div_list" align="left">
+			<h2>Detalle del evento: {{ event }}</h2>
+			{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+			
+			<ul>
+				<li><b>ID:</b> {{ event.id }}</li>
+				<li><b>Categoría:</b> {{ event.event_category }}</li>
+				<li><b>Lugar:</b> {{ event.event_place }}</li>
+				<li><b>Dirección:</b> {{ event.event_address }}</li>
+				<li><b>Fecha inicio:</b> {{ event.date_start }}</li>
+				<li><b>Fecha Fin:</b> {{ event.date_end }}</li>
+				<li><b>Evento virtual:</b> {{ event.event_virtual }}</li>
+				<li><b>Fecha creación:</b> {{ event.date_created }}</li>
+				<li><b>Creado por:</b> {{ event.created_by }}</li>
+			<ul>
+		</div>
+		
+	{% else %}
+		<p>Debe seleccionar un evento.</p>
+	{% endif %}
+	
+	<!-- Menu -->
+	<div class="div_list" align="left">
+		<a href="/events/event">Regresar a eventos</a>
+	</div>
+		
+</div>
+{% endblock %}

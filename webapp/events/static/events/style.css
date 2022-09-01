@@ -1,0 +1,29 @@
+.div_content {
+    width:100%; margin:0px; padding:0px;
+}
+
+.div_header {
+    background: white url("images/header.png") no-repeat center top;
+    width:96%; height:220px;
+    padding:0px;
+    border:solid lightgray 0px;
+}
+
+.div_list {
+    width:96%;
+    padding:5px 10px 5px 10px;
+    border:solid lightgray 0px; 
+}
+
+.div_list li a {
+    color: black;
+}
+
+.div_list h2 {
+    color:#417690
+}
+
+.events-btn {
+	margin-left:20px;
+	height:25px;
+}
