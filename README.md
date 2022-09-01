@@ -1,9 +1,9 @@
 # Django CRUD
 
 ![version](https://img.shields.io/badge/Version-Dev-blue)
-![release](https://img.shields.io/badge/Release-0.1.0-blue)
+![release](https://img.shields.io/badge/Release-0.2.0-blue)
 ![language](https://img.shields.io/badge/Language-python-brightgreen)
-![last-update](https://img.shields.io/badge/Last_update-2/6/2018-orange)
+![last-update](https://img.shields.io/badge/Last_update-9/1/2022-orange)
 
 Django CRUD example.
 
@@ -14,7 +14,7 @@ Commands to create the virtual environment (`venv`) and run the **Django CRUD ap
   cd C:\Dev Projects\django-crud
   python -m venv .venv
   .venv\Scripts\activate
-  cd web-app
+  cd webapp\
   python manage.py runserver 8080
   deactivate
 ```
@@ -26,7 +26,6 @@ Commands to create the virtual environment (`venv`) and run the **Django CRUD ap
 ```
 
 ## Project Dependencies
-
 The list of project requirements can be found in the following text <a href="https://github.com/ansegura7/django-crud/blob/main/requirements.txt">file</a>.
 
 To automatically install the exact version of all dependencies, run the following commands in the terminal:
