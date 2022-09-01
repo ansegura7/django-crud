@@ -1,0 +1,21 @@
+{% extends "admin/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block title %}Logged out{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'events/style.css' %}" />
+
+<div class="div_content" align="center" >
+
+	<div class="div_list" align="left">
+		<p>Usted finalizó sessión correctamente</p>
+	</div>
+
+	<!-- Menu -->
+	<div class="div_list" align="left">
+		<a href="../login">Regresar al login</a>
+	</div>
+	
+</div>
+{% endblock %}

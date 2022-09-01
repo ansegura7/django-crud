@@ -1,0 +1,38 @@
+{% extends "admin/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block title %}Eliminar evento{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'events/style.css' %}" />
+
+<div class="div_content" align="center" >
+	
+	<!-- Header -->
+	<div class="div_list" align="left">
+		Bienvenido, {{ user.get_full_name }}!
+	</div>
+
+	<!-- Content -->
+    <div id="content" class="colM" align="left">
+        
+        <h1>Estas seguro?</h1>
+
+		<p>¿Seguro que quieres eliminar el evento seleccionado? Se eliminarán todos los siguientes objetos y sus elementos relacionados:</p>
+
+		<h2>Evento</h2>
+		
+		<ul><li>Event: {{ event }}</li></ul>
+		
+		<form method="POST" class="post-form">{% csrf_token %}
+			<div>
+				<input type="submit" style="background-color:darkred;" value="Yes, I'm sure">
+				<a href="/events/event" class="button cancel-link">No, take me back</a>
+			</div>
+		</form>
+			
+	</div>
+	<!-- END Content -->
+	
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block title %}Login error{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'events/style.css' %}" />
+
+<div class="div_content" align="center" >
+
+	<div class="div_list" align="left">
+		<p>Parece que hubo un error. ¿Ingreso correctamente sus datos de Login?</p>
+		<p>Por favor, regrese a la página de Login e ingrese de nuevo sus datos.</p>
+	</div>
+
+	<!-- Menu -->
+	<div class="div_list" align="left">
+		<a href="/login">Regresar al login</a>
+	</div>
+	
+</div>
+{% endblock %}
