@@ -20,5 +20,3 @@ urlpatterns = [
     path("events/", include("events.urls")),
     path("admin/", admin.site.urls),
 ]
-
-# urlpatterns += [url(r"^login/$", auth_views.login, name="login"), url(r"^logout/$", auth_views.logout, name="logout")]
