@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    "django_tables2",
     "events.apps.EventsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -110,6 +111,8 @@ TIME_ZONE = "UTC"
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
 
 
@@ -119,6 +122,8 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+LOGIN_REDIRECT_URL = "../events/index"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
