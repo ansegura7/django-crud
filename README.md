@@ -14,8 +14,7 @@ Commands to create the virtual environment (`venv`) and run the **Django CRUD ap
   cd C:\Dev Projects\django-crud
   python -m venv .venv
   .venv\Scripts\activate
-  cd webapp\
-  python manage.py runserver 8080
+  python webapp\manage.py runserver 8080
   deactivate
 ```
 
