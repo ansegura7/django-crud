@@ -154,18 +154,3 @@ def delete_event(request, event_id):
     else:
         # Do something for anonymous users.
         return render(request, loginErrorPage)
-
-
-# Delete a Event
-def delete_object(request, event_id):
-
-    # Session validation
-    if request.user.is_authenticated:
-
-        # Do something for authenticated users.
-        object = get_object_or_404(Event, pk=event_id)
-        object.delete()
-        return redirect("/events/event")
-    else:
-        # Do something for anonymous users.
-        return render(request, loginErrorPage)

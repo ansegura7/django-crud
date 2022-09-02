@@ -17,12 +17,12 @@
 	<div class="div_list" align="left">
 		<h2>Opciones</h2>
 		<ul>
-			<li><a href="/events/event">Lista de eventos</a></li>
-			<li><a href="/events/new">Nuevo evento</a></li>
+			<li><a href="/events/event"><img src="{% static '/events/images/list.png' %}" title="Lista de eventos" />&thinsp;Lista de eventos</a></li>
+			<li><a href="/events/new"><img src="{% static '/events/images/new.png' %}" title="Nuevo evento" />&thinsp;Nuevo evento</a></li>
 		<ul>
 		</ul>
-			<li><a href="{% url 'admin:index' %}">Admin panel</a></li>
-			<li><a href="../logout">Logout</a></li>
+			<li><img src="{% static '/events/images/panel.png' %}" title="Admin panel" /> <a href="{% url 'admin:index' %}">&thinsp;Admin panel</a></li>
+			<li><img src="{% static '/events/images/exit.png' %}" title="Logout" /> <a href="../logout">&thinsp;Logout</a></li>
 		</ul>
 	</div>
 	
@@ -35,7 +35,7 @@
 				{% render_table latest_event_list %}
 			</div>
 		{% else %}
-			<p>No hay eventos disponibles.</p>
+			<p>No hay eventos disponibles. Puedes crear uno si lo deseas...</p>
 		{% endif %}
 	</div>
 	

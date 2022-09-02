@@ -1,10 +1,15 @@
-# Django CRUD
+# Django CRUD Web App
+
+Example of a CRUD web application, using the Django framework.
 
 ## Create Project
 
 ```console
   django-admin startproject webbapp
   python manage.py startapp events
+  python manage.py makemigrations events
+  python manage.py sqlmigrate events 0001
+  python manage.py migrate
 ```
 
 ## Contributing and Feedback

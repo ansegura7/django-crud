@@ -1,11 +1,11 @@
-# Django CRUD
+# Django CRUD Web App
 
 ![version](https://img.shields.io/badge/Version-Dev-blue)
-![release](https://img.shields.io/badge/Release-0.5.0-blue)
+![release](https://img.shields.io/badge/Release-0.6.0-blue)
 ![language](https://img.shields.io/badge/Language-python-brightgreen)
-![last-update](https://img.shields.io/badge/Last_update-9/1/2022-orange)
+![last-update](https://img.shields.io/badge/Last_update-9/2/2022-orange)
 
-Django CRUD web app example.
+Example of a CRUD web application, using the Django framework.
 
 ## Run Django CRUD app
 Commands to create the virtual environment (`venv`) and run the **Django CRUD app** on the web server.
@@ -14,8 +14,7 @@ Commands to create the virtual environment (`venv`) and run the **Django CRUD ap
   cd C:\Dev Projects\django-crud
   python -m venv .venv
   .venv\Scripts\activate
-  cd webapp\
-  python manage.py runserver 8080
+  python webapp\manage.py runserver 8080
   deactivate
 ```
 
