@@ -6,38 +6,42 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'events/style.css' %}" />
 
-<div class="div_content" align="center" >
-	
+<div class="div_content" align="center">
+
 	<!-- Header -->
 	<div class="div_list" align="left">
-		Bienvenido, {{ user.get_full_name }}!
+		Welcome, {{ user.get_full_name }}!
 	</div>
-	
+
 	<!-- Menu -->
 	<div class="div_list" align="left">
-		<h2>Opciones</h2>
+		<h2>Options</h2>
 		<ul>
-			<li><a href="/events/event"><img src="{% static '/events/images/list.png' %}" title="Lista de eventos" />&thinsp;Lista de eventos</a></li>
-			<li><a href="/events/new"><img src="{% static '/events/images/new.png' %}" title="Nuevo evento" />&thinsp;Nuevo evento</a></li>
-		<ul>
-		</ul>
-			<li><img src="{% static '/events/images/panel.png' %}" title="Admin panel" /> <a href="{% url 'admin:index' %}">&thinsp;Admin panel</a></li>
-			<li><img src="{% static '/events/images/exit.png' %}" title="Logout" /> <a href="../logout">&thinsp;Logout</a></li>
+			<li><a href="/events/event"><img src="{% static '/events/images/list.png' %}"
+						title="Event list" />&thinsp;Event list</a></li>
+			<li><a href="/events/new"><img src="{% static '/events/images/new.png' %}" title="New event" />&thinsp;New
+					event</a></li>
+			<ul>
+			</ul>
+			<li><img src="{% static '/events/images/panel.png' %}" title="Admin panel" /> <a
+					href="{% url 'admin:index' %}">&thinsp;Admin panel</a></li>
+			<li><img src="{% static '/events/images/exit.png' %}" title="Logout" /> <a
+					href="../logout">&thinsp;Logout</a></li>
 		</ul>
 	</div>
-	
+
 	<div class="div_list" align="left">
 		{% if latest_event_list %}
-		
-			{% load render_table from django_tables2 %}
-			<div class="div_list" align="left">
-				<h2>Últimos eventos</h2>
-				{% render_table latest_event_list %}
-			</div>
+
+		{% load render_table from django_tables2 %}
+		<div class="div_list" align="left">
+			<h2>Latest events</h2>
+			{% render_table latest_event_list %}
+		</div>
 		{% else %}
-			<p>No hay eventos disponibles. Puedes crear uno si lo deseas...</p>
+		<p>There are no events available. You can create one if you wish.</p>
 		{% endif %}
 	</div>
-	
+
 </div>
 {% endblock %}
