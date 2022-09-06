@@ -13,13 +13,13 @@
 <script src="//cdn.bootcss.com/moment.js/2.17.1/moment.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap-datetimepicker/4.17.44/js/bootstrap-datetimepicker.min.js"></script>
 
-<div class="div_content" align="center" >
-	
+<div class="div_content" align="center">
+
 	<!-- Header -->
 	<div class="div_list" align="left">
-		Bienvenido, {{ user.get_full_name }}!
+		Welcome, {{ user.get_full_name }}!
 	</div>
-	
+
 	<div class="div_list" align="left">
 		<h2>Editar Evento</h2>
 		<form method="POST" class="post-form">{% csrf_token %}
@@ -27,20 +27,20 @@
 			<button type="submit" class="save btn btn-default">Edit</button>
 		</form>
 	</div>
-	
+
 	<!-- Menu -->
 	<div class="div_list" align="left">
-		<a href="/events/index">Regresar a opciones</a> | <a href="/events/event">Mostrar eventos</a>
+		<a href="/events/index">Back to options</a> | <a href="/events/event">Show events</a>
 	</div>
-	
+
 </div>
 
 <script>
-    $(function () {
-        $('.datetime-input').datetimepicker({
-            format:'YYYY-MM-DD HH:mm:ss'
-        });
-    });
+	$(function () {
+		$(".datetime-input").datetimepicker({
+			format: 'YYYY-MM-DD HH:mm:ss'
+		});
+	});
 </script>
 
 {% endblock %}
