@@ -1,7 +1,7 @@
 # Django CRUD Web App
 
 ![version](https://img.shields.io/badge/Version-Dev-blue)
-![release](https://img.shields.io/badge/Release-0.6.2-blue)
+![release](https://img.shields.io/badge/Release-0.6.3-blue)
 ![language](https://img.shields.io/badge/Language-python-brightgreen)
 ![last-update](https://img.shields.io/badge/Last_update-9/6/2022-orange)
 
